@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solicitud de Préstamo Estudiantil</title>
+    </head> 
+    <body>  
+        <h1>Solicitud de Préstamo Estudiantil</h1>
+        <form action="solicitud_prestamo.html" method="GET">
+            <label for="txtNombreCompleto">Nombre Completo</label>
+            <input type="text" name="txtNombreCompleto" id="txtNombreCompleto" placeholder="Escriba su Nombre Completo"  />
+            <br/>
+
+            <label for="txtEmail">Dirección de Correo Electrónico</label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="ejemplo@correo.com"  />
+            <br/>
+
+            <label for="txtTelefono">Número de Teléfono</label>
+            <input type="text" name="txtTelefono" id="txtTelefono" placeholder="Escriba su Número de Teléfono" />
+            <br/>
+
+            <label for="txtDireccion">Dirección Actual</label>
+            <input type="text" name="txtDireccion" id="txtDireccion" placeholder="Escriba su Dirección Actual"  />
+            <br/>
+
+            <label for="txtCiudad">Ciudad</label>
+            <input type="text" name="txtCiudad" id="txtCiudad" placeholder="Escriba su Ciudad" />
+            <br/>
+
+            <label for="selectDepartamento">Departamento</label>
+            <select name="selectDepartamento" id="selectDepartamento">
+                <option value="">Seleccionar Departamento</option>
+                <option value="Atlántida">Atlántida</option>
+                <option value="Choluteca">Choluteca</option>
+                <option value="Colón">Colón</option>
+                <option value="Comayagua">Comayagua</option>
+                <option value="Copán">Copán</option>
+                <option value="Cortés">Cortés</option>
+                <option value="El Paraíso">El Paraíso</option>
+                <option value="Francisco Morazán">Francisco Morazán</option>
+                <option value="Gracias a Dios">Gracias a Dios</option>
+                <option value="Intibucá">Intibucá</option>
+                <option value="Islas de la Bahía">Islas de la Bahía</option>
+                <option value="La Paz">La Paz</option>
+                <option value="Lempira">Lempira</option>
+                <option value="Ocotepeque">Ocotepeque</option>
+                <option value="Olancho">Olancho</option>
+                <option value="Santa Bárbara">Santa Bárbara</option>
+                <option value="Valle">Valle</option>
+                <option value="Yoro">Yoro</option>
+            </select>
+            <br/>
+
+            <label for="txtCodigoPostal">Código Postal</label>
+            <input type="text" name="txtCodigoPostal" id="txtCodigoPostal" placeholder="Escriba su Código Postal"  />
+            <br/>
+
+            <fieldset>
+                <legend>Nivel de Educación Actual</legend>
+                <label for="radioPreparatoria">Preparatoria</label>
+                <input type="radio" name="nivelEducacion" id="radioPreparatoria" value="Preparatoria"  />
+                <label for="radioLicenciatura">Licenciatura</label>
+                <input type="radio" name="nivelEducacion" id="radioLicenciatura" value="Licenciatura" />
+                <label for="radioMaestria">Maestría</label>
+                <input type="radio" name="nivelEducacion" id="radioMaestria" value="Maestría" />
+                <label for="radioDoctorado">Doctorado</label>
+                <input type="radio" name="nivelEducacion" id="radioDoctorado" value="Doctorado" />
+            </fieldset>
+            <br/>
+
+            <fieldset>
+                <legend>Programa de Estudio</legend>
+                <label for="radioComputacion">Ciencias de la Computación</label>
+                <input type="radio" name="programaEstudio" id="radioComputacion" value="Ciencias de la Computación"  />
+                <label for="radioIngenieria">Ingeniería</label>
+                <input type="radio" name="programaEstudio" id="radioIngenieria" value="Ingeniería" />
+                <label for="radioEconomia">Economía</label>
+                <input type="radio" name="programaEstudio" id="radioEconomia" value="Economía" />
+                <label for="radioArtes">Artes</label>
+                <input type="radio" name="programaEstudio" id="radioArtes" value="Artes" />
+                <label for="radioOtro">Otro</label>
+                <input type="radio" name="programaEstudio" id="radioOtro" value="Otro" />
+            </fieldset>
+            <br/>
+
+            <label for="txtMontoPrestamo">Monto del Préstamo Solicitado</label>
+            <input type="text" name="txtMontoPrestamo" id="txtMontoPrestamo" placeholder="Escriba el Monto Solicitado (ej. 5000)" />
+            <br/>
+
+            <label for="txtRazon">Razón para Solicitar el Préstamo</label><br/>
+            <textarea id="txtRazon" name="txtRazon" placeholder="Escriba la Razón para Solicitar el Préstamo"></textarea>
+            <br/>
+
+            <button name="btnEnviar" type="submit">Enviar Solicitud</button>
+        </form>
+    </body> 
+</html>

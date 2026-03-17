@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Formularios</title>
+    </head> 
+    <body>  
+          <h1>Formulario en HTML</h1>
+            <form action="formularios.html" method="GET" >
+              <label for="txtNombre"> Nombre Completo</label>
+              <input type="text" name="txtNombreCompleto" id="txtNombre" placeholder="Escriba su Nombre Completo" />
+              <!--txtNombreCompleto=valorIngresadoPorElusuario-->
+              <label for="identidad">Edad</label>
+              <input type="number" min="1" max="150" name="identidad" id="identidad"/>
+              <br/>
+            <label for="ColorAzul">Azul</label>
+            <input type="radio" name="Color preferido" id="ColorAzul" value="Azul"/>
+            <label>Rojo&nbsp;
+             <input type="radio" name="Color preferido" id="ColorRojo" value="Rojo"/>
+            </label>
+            <label>Amarillo&nbsp;
+             <input type="radio" name="Color preferido" id="ColorAmarillo" value="Amarillo"/>
+            </label>
+             <label>Verde&nbsp;
+             <input type="radio" name="Color preferido" id="ColorVerde" value="Verde"/>
+            </label>
+            <fieldset>
+              <legend>Opciones</legend>
+              <label>Opcion 1<input type="checkbox" value="1" name="option1"/></label>
+              <label>Opcion 2<input type="checkbox" value="2" name="option2"/></label>
+              <label>Opcion 3<input type="checkbox" value="2" name="option3"/></label>
+            </fieldset>
+              <br/>
+              <label for="txtRangoEdad">Rango de Edad</label>
+              <select name="txtRangoEdad" id="txtRangoEdad">
+                <option value="*">Seleccionar un Rango</option>
+                <option value="1-10">1-10 Años</option>
+                <option value="11-20">11-20 Años</option>
+                <option value="21-30">21-30 Años</option>
+              </select>
+              <br/>
+              <label for="txtBio">Biografia</label><br/>
+              <textarea id="txtBio" name="txtBio"
+               placeholder="Escribe Su Biografia completa"></textarea>
+               <br/>
+               <button name="btnPresionar" type="submit">
+                Procesar
+               </button>
+            </form>
+    </body> 
+</html>
